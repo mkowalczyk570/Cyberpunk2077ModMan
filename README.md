@@ -1,12 +1,12 @@
-#2077 Mod Man
+# 2077 Mod Man
 
-#Motivation
+## Motivation
 Modding Cyberpunk 2077 can be a rather cumbersome task when users don't have premium mod manager options available to them. When modding the game, players such as myself love to use hundreds of mods, and keeping track of them becomes quite a hassle due to game updates breaking older mod versions. This application aims to solve that problem by providing a comprehensive rundown of what mod versions the user has previously downloaded, and what current version is available.
 
 Another problem is moving the sheer quantity of files to their respective locations. There are many mods, some alter gameplay, others alter textures, and some even uproot and rework entire game systems such as skills and driving mechanics. And all of these mods have to be sorted accordingly..
 The 2077 Mod Man will aim to automatically sort these files into their destination directories in the game files
 
-#About
+## About
 
 The mod manager will be comprised of several moving parts. The first is a backend data retrieval structure built using the NexusMods API, and storage of relevant mod information in mongoDB documents for the purpose of version comparison and keeping a users download history organized. Mod information will also be cached using a redis server, reducing API calls for bulk downloads. The user will also have the option to create different mod lists, and load them at will.
 
