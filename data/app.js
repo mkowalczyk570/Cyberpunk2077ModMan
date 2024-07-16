@@ -1,9 +1,9 @@
-import { getModInfo } from "./modVersionControl.js";
+import { getModFileIds } from "./nexusApi.js";
 
 try{
-    const res = await getModInfo(12065)
-    const body = await res.json()
-    console.log(body)
+    const res = await getModFileIds(15751)
+    console.log(res)
+    
 }catch(e){
     console.log(e)
 }
